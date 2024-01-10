@@ -4,8 +4,6 @@ In the sparse vertex grid approaches I provide a mosaic warping method as well a
 
 ![drawn](https://github.com/btxviny/Trajectory-Optimization-Video-Stabilization/blob/main/images/drawn_small.gif).
 
-![plot](https://github.com/btxviny/Trajectory-Optimization-Video-Stabilization/blob/main/images/plot.png).
-
 ## Feature based stabilization.
 The camera path is constructed by matching features between consecutive frames and the unwanted motion is removed with low-pass filtering. This is implemented in feature_stabilization.py
        
@@ -22,4 +20,4 @@ I provide a pixel profile gradient based optimization method and a parametric fi
      -dense_optim.ipynb
      -dense_parametric.ipynb
      
-
+![plot](https://github.com/btxviny/Trajectory-Optimization-Video-Stabilization/blob/main/images/plot.png).
