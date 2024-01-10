@@ -2,7 +2,7 @@
 This repository consists of various video stabilization methods using different motion models.1)Homography transformations between consecutive frames. 2) Sparse vertex grid motion. 3) Dense optical flow fields.
 In the sparse vertex grid approaches I provide a mosaic warping method as well as a method based on [PCA-Flow](http://openaccess.thecvf.com/content_cvpr_2015/papers/Wulff_Efficient_Sparse-to-Dense_Optical_2015_CVPR_paper.pdf).
 
-##Feature based stabilization.
+## Feature based stabilization.
      - The camera path is constructed by matching features between consecutive frames and the unwanted motion is removed with low-pass filtering. This is implemented in feature_stabilization.py
        
 ## Sparse vertex grid motion optimization as described in [MeshFlow](http://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_Minimum_Latency_Deep_Online_Video_Stabilization_ICCV_2023_paper.pdf).
