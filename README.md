@@ -1,7 +1,11 @@
 ## Trajectory Optimization and Parametric filtering based Video Stabilization
-I offer my implementation of [MeshFlow](http://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_Minimum_Latency_Deep_Online_Video_Stabilization_ICCV_2023_paper.pdf).
-
-I also provide a gradient-based sparse vertex grid optimization method using PyTorch with a simple smoothness loss function.
+This repository consists of various video stabilization methods.
+##Feature based stabilization.
+- The camera path is constructed by matching features between consecutive frames and the unwanted motion is removed with low-pass filtering.
+Sparse vertex grid motion optimization as described in [MeshFlow](http://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_Minimum_Latency_Deep_Online_Video_Stabilization_ICCV_2023_paper.pdf).
+Sparse vertex grid motion optimization using a gradient-based  method using PyTorch with a simple smoothness loss function.
+Dense optical flow / pixel profile optimization.
+Dense optical flow parametric filtering.
 
 The motion is modeled in a sparse vertex grid as shown in the figure below:
 ![drawn](https://github.com/btxviny/Trajectory-Optimization-Video-Stabilization/blob/main/images/drawn_small.gif).
