@@ -11,8 +11,7 @@ The camera path is constructed by matching features between consecutive frames a
 ## Sparse vertex grid motion optimization.
  I provide my implementation of[MeshFlow](http://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_Minimum_Latency_Deep_Online_Video_Stabilization_ICCV_2023_paper.pdf).
  I provide my own gradient-based optimization method using PyTorch with a simple smoothness loss function.
- For each algorithm I provide two different warping methods. A mosaic warping method as well as a method based on [PCA-Flow](http://openaccess.thecvf.com/content_cvpr_2015/papers/Wulff_Efficient_Sparse-to-
- Dense_Optical_2015_CVPR_paper.pdf) which does not introduce any black borders.
+ For each algorithm I provide two different warping methods. A mosaic warping method as well as a method based on [PCA-Flow](http://openaccess.thecvf.com/content_cvpr_2015/papers/Wulff_Efficient_Sparse-to-Dense_Optical_2015_CVPR_paper.pdf) which does not introduce any black borders.
 - meshflow_mosaic.ipynb
 - meshflow_pca.ipynb
 - sparse_grid.ipynb
