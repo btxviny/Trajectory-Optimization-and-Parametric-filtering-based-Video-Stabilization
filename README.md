@@ -41,3 +41,6 @@ python  scripts/stabilize_pixel_profiles_filtering.py --in_path unstable_video_p
 - Replace `result_path` with the desired path for the stabilized output video.
      
 ![plot](https://github.com/btxviny/Trajectory-Optimization-and-Parametric-filtering-based-Video-Stabilization/blob/main/images/plot.png).
+
+## Evaluation
+For method evaluation and comparison I will use non-reference metrics commonly used among researchers. These metrics include: 1) cropping ratio 2) global distortion 3) pixel loss and 4) stability. We will interpret them as scores, and a good result should have a value close to 1. These metrics except the pixel loss were defined in [Bundled Camera Paths for Video Stabilization](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/Stabilization_SIGGRAPH13.pdf).
