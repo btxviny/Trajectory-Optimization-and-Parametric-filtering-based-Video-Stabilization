@@ -5,7 +5,9 @@ This repository consists of various video stabilization methods using different 
 
 ## Feature based stabilization.
 The camera path is constructed by matching features between consecutive frames and the unwanted motion is removed with low-pass filtering.
--feature_stabilization.py
+```bash
+python stabilize_features.py --in_path unstable_video_path --out_path result_path
+```
        
 ## Sparse vertex grid motion optimization.
  I provide my implementation of[MeshFlow](http://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_Minimum_Latency_Deep_Online_Video_Stabilization_ICCV_2023_paper.pdf).
