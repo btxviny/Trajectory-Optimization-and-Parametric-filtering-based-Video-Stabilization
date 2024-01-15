@@ -8,6 +8,8 @@ The camera path is constructed by matching features between consecutive frames a
 ```bash
 python stabilize_features.py --in_path unstable_video_path --out_path result_path
 ```
+- Replace `unstable_video_path` with the path to your input unstable video.
+- Replace `result_path` with the desired path for the stabilized output video.
        
 ## Sparse vertex grid motion optimization.
  I provide my implementation of[MeshFlow](http://openaccess.thecvf.com/content/ICCV2023/papers/Zhang_Minimum_Latency_Deep_Online_Video_Stabilization_ICCV_2023_paper.pdf).
@@ -35,5 +37,7 @@ python stabilize_pixel_profiles_optim.py --in_path unstable_video_path --out_pat
 ```bash
 python stabilize_pixel_profiles_filtering.py --in_path unstable_video_path --out_path result_path
 ```
+- Replace `unstable_video_path` with the path to your input unstable video.
+- Replace `result_path` with the desired path for the stabilized output video.
      
 ![plot](https://github.com/btxviny/Trajectory-Optimization-and-Parametric-filtering-based-Video-Stabilization/blob/main/images/plot.png).
