@@ -43,4 +43,8 @@ python  scripts/stabilize_pixel_profiles_filtering.py --in_path unstable_video_p
 ![plot](https://github.com/btxviny/Trajectory-Optimization-and-Parametric-filtering-based-Video-Stabilization/blob/main/images/plot.png).
 
 ## Evaluation
-For method evaluation and comparison I will use non-reference metrics commonly used among researchers. These metrics include: 1) cropping ratio 2) global distortion 3) pixel loss and 4) stability. We will interpret them as scores, and a good result should have a value close to 1. These metrics except the pixel loss were defined in [Bundled Camera Paths for Video Stabilization](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/Stabilization_SIGGRAPH13.pdf).
+For method evaluation and comparison I will use non-reference metrics commonly used among researchers. These metrics include: 1) cropping ratio 2) global distortion 3) pixel loss and 4) stability. We will interpret them as scores, and a good result should have a value close to 1. These metrics except the pixel loss were defined in [Bundled Camera Paths for Video Stabilization](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/Stabilization_SIGGRAPH13.pdf). For my evaluation dataset we will use the one provided in [Bundled Camera Paths for Video Stabilization](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/11/Stabilization_SIGGRAPH13.pdf). We take 5 videos from different categories of camera motion and scene layouts. These categories include parallax, quick rotation, zooming, crowd and regular unstable videos. The average score in each category will be used to compare methods.
+The results are:
+![scores](https://github.com/btxviny/Trajectory-Optimization-and-Parametric-filtering-based-Video-Stabilization/blob/main/images/scores.png)
+
+The evaluation dataset can be downloaded [here]() and the results were generated using the evaluation_all.ipynb notebook.
