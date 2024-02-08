@@ -93,10 +93,7 @@ def stabilize(frames,smoothing = 'mva'):
             smoothed_trajectory[i] = alpha * trajectory[i] + (1 - alpha) * smoothed_trajectory[i - 1]
 
     # Calculate difference in smoothed_trajectory and trajectory
-    difference = smoothed_trajectory - trajectory
-
-    # Calculate newer transformation array
-    transforms_smooth = transforms + difference
+    transforms_smooth = smoothed_trajectory - trajectory
 
     smooth_frames = np.zeros_like(frames)
     # Write n_frames-1 transformed frames
