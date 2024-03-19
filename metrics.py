@@ -4,7 +4,7 @@ import sys
 
 def metric(original_video_path, pred_video_path,shape=(128,128)):
     ''' Inputs: 
-            path1: path to ground truth stable video
+            path1: path to original unstable video
             path2: path to generated stable video
         Outputs:
             cropping_score
