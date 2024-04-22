@@ -29,7 +29,7 @@ python  scripts/stabilize_sparse_pca.py --in_path unstable_video_path --out_path
 ```
 - Replace `unstable_video_path` with the path to your input unstable video.
 - Replace `result_path` with the desired path for the stabilized output video.
-## Dense Optical Field/ Pixel profile smoothing.
+## Dense Optical Flow/ Pixel profile smoothing.
 I provide a pixel profile gradient based optimization method and a parametric filtering approach.
 ```bash
 python  scripts/stabilize_pixel_profiles_optim.py --in_path unstable_video_path --out_path result_path
